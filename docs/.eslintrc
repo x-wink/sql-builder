@@ -1,0 +1,4 @@
+{
+    "root": true,
+    "extends": ["@xwink/eslint-config/vue"]
+}
