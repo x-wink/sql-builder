@@ -161,9 +161,8 @@ export class Condition implements ISqlify {
                     placeholder = `( ? and ? )`;
                     break;
                 default:
-                    // eslint-disable-next-line @typescript-eslint/no-unused-vars
                     error = this.operator;
-                    break;
+                    throw error;
             }
         }
         // 运算符映射
