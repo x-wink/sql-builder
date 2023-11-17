@@ -39,6 +39,9 @@
         "prettier": "prettier --write ./**/*.{vue,ts,tsx,js,jsx,css,less,json,md,html}",
         "prepare": "husky install"
     },
+    "dependencies": {
+        "@xwink/utils": "^1.0.0"
+    },
     "devDependencies": {
         "@commitlint/cli": "^18.4.1",
         "@commitlint/config-conventional": "^18.4.0",
@@ -64,8 +67,5 @@
         "*.{vue,ts,tsx,js,jsx,css,less,json,md,html}": [
             "npm run prettier"
         ]
-    },
-    "dependencies": {
-        "@xwink/utils": "^1.0.0"
     }
 }
