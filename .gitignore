@@ -1,6 +1,6 @@
 node_modules
 dist
-types
+./types
 stats.html
 *.local
 package-lock.json

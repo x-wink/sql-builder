@@ -1,10 +1,9 @@
 {
-    "name": "libary-template",
+    "name": "@xwink/sql-builder",
     "version": "1.0.0",
     "keywords": [
-        "vite",
-        "libary",
-        "template"
+        "sql",
+        "builder"
     ],
     "author": {
         "name": "XWINK",
@@ -12,7 +11,7 @@
         "url": "https://github.com/x-wink"
     },
     "repository": {
-        "url": "https://github.com/x-wink/libary-template"
+        "url": "https://github.com/x-wink/sql-builder"
     },
     "private": false,
     "files": [
@@ -65,5 +64,8 @@
         "*.{vue,ts,tsx,js,jsx,css,less,json,md,html}": [
             "npm run prettier"
         ]
+    },
+    "dependencies": {
+        "@xwink/utils": "^1.0.0"
     }
 }

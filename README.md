@@ -1,7 +1,7 @@
-<h1 align="center">欢迎使用我的库项目模板 👋</h1>
+<h1 align="center">欢迎使用我的SQL语句构建器 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/x-wink/libary-template#readme" target="_blank">
+  <a href="https://github.com/x-wink/sql-builder#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
 </p>
@@ -9,10 +9,7 @@
 ## ⬇️ 使用方式
 
 ```cmd
-npx degit x-wink/libary-template#main my-project
-cd my-project
-npm install
-npm run dev
+npm install @xwink/sql-builder --save
 ```
 
 ## 🎯 框架依赖
@@ -34,6 +31,6 @@ npm run dev
 
 ## 🤝 贡献
 
-欢迎提交代码、提出问题和功能建议<br /> [反馈地址](https://github.com/x-wink/libary-template/issues)
+欢迎提交代码、提出问题和功能建议<br /> [反馈地址](https://github.com/x-wink/sql-builder/issues)
 
 如果这个项目对你有帮助的话就点个小星星吧 ⭐️
