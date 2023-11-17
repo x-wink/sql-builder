@@ -25,7 +25,7 @@
     "browser": "dist/index.js",
     "exports": {
         ".": {
-            "types": "./types/index.d.ts",
+            "types": "./types/src/index.d.ts",
             "import": "./dist/index.mjs",
             "require": "./dist/index.cjs"
         }
@@ -39,7 +39,7 @@
         "prettier": "prettier --write ./**/*.{vue,ts,tsx,js,jsx,css,less,json,md,html}",
         "prepare": "husky install"
     },
-    "dependencies": {
+    "peerDependencies": {
         "@xwink/utils": "^1.0.0"
     },
     "devDependencies": {
