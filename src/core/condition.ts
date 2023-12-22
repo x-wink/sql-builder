@@ -175,7 +175,9 @@ export class Condition implements ISqlify {
     }
     getValues(): unknown[] {
         return [
-            ...(this.value instanceof Array ? (this.value as unknown[]) : [this.value]),
+            ...(this.value instanceof Array ? (this.value as unknown[]) : [this.value]).filter(
+                (item) => !(item instanceof Field)
+            ),
             ...(this.value instanceof ConditionBuilder ? this.value.getValues() : []),
         ];
     }
