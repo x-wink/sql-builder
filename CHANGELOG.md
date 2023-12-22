@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/x-wink/sql-builder/compare/v1.0.1...v1.0.2) (2023-12-22)
+
+### Bug Fixes
+
+-   Condition values exclude Field ([679c4d8](https://github.com/x-wink/sql-builder/commit/679c4d8be1afb6e2bac5fcb29dd3410b6c59e131))
+
 ## [1.0.1](https://github.com/x-wink/sql-builder/compare/v1.0.0...v1.0.1) (2023-11-17)
 
 ### Bug Fixes
