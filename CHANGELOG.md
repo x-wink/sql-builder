@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/x-wink/sql-builder/compare/v1.0.2...v1.0.3) (2024-02-20)
+
+### Bug Fixes
+
+-   ignore page limit when page size not lt 0 ([8210473](https://github.com/x-wink/sql-builder/commit/8210473f03738f6076c794abb77d38c9a84a1688))
+
 ## [1.0.2](https://github.com/x-wink/sql-builder/compare/v1.0.1...v1.0.2) (2023-12-22)
 
 ### Bug Fixes
