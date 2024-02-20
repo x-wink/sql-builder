@@ -514,7 +514,7 @@ export class LimitBuilder extends SqlBuilder<Limit> {
      * @param pageSize 页容量
      */
     page(pageNo: number, pageSize: number, condition?: ConditionFunction) {
-        if (condition?.() !== false) {
+        if (pageSize > 0 && condition?.() !== false) {
             this.children[0] = Limit.page(pageNo, pageSize);
         }
     }
