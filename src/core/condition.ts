@@ -158,7 +158,7 @@ export class Condition implements ISqlify {
                     break;
                 case ConditionOperator.Between:
                 case ConditionOperator.NotBetween:
-                    placeholder = `( ? and ? )`;
+                    placeholder = `? and ?`;
                     break;
                 default:
                     error = this.operator;
