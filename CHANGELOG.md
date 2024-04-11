@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/x-wink/sql-builder/compare/v1.0.3...v1.0.4) (2024-04-11)
+
+### Bug Fixes
+
+-   between and not between sql value placeholder ([e8ffec3](https://github.com/x-wink/sql-builder/commit/e8ffec3da37905e7b811f2f6ca0dd2d75fe21db2))
+
 ## [1.0.3](https://github.com/x-wink/sql-builder/compare/v1.0.2...v1.0.3) (2024-02-20)
 
 ### Bug Fixes
