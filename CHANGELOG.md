@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/x-wink/sql-builder/compare/v1.0.4...v1.0.5) (2024-11-23)
+
+
+### Bug Fixes
+
+* ignore undefined values ([468f8e5](https://github.com/x-wink/sql-builder/commit/468f8e519b48c64ad49ac1ccf196efd6279c9743))
+
+
+
 ## [1.0.4](https://github.com/x-wink/sql-builder/compare/v1.0.3...v1.0.4) (2024-04-11)
 
 ### Bug Fixes
