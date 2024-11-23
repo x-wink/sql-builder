@@ -1,7 +1,7 @@
-import type { ISqlify } from './builder';
 import { concat } from '@xwink/utils';
-import { Field } from './field';
+import type { ISqlify } from './builder';
 import { ConditionBuilder, QueryBuilder } from './builder';
+import { Field } from './field';
 
 /**
  * 条件运算符
@@ -176,7 +176,7 @@ export class Condition implements ISqlify {
     getValues(): unknown[] {
         return [
             ...(this.value instanceof Array ? (this.value as unknown[]) : [this.value]).filter(
-                (item) => !(item instanceof Field)
+                (item) => typeof item !== 'undefined' && !(item instanceof Field)
             ),
             ...(this.value instanceof ConditionBuilder ? this.value.getValues() : []),
         ];
