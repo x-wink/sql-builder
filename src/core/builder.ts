@@ -1,14 +1,14 @@
-import type { ConditionFunction, ConditionKeyword, ConditionArray } from '../types';
 import type { ChangeFunctionReturnType, PickFunctions } from '@xwink/utils';
 import { concat } from '@xwink/utils';
+import type { ConditionArray, ConditionFunction, ConditionKeyword } from '../types';
+import { parseConditionArray } from '../utils';
 import { Condition, ConditionLogic, ConditionOperator } from './condition';
 import { Field } from './field';
-import { Value } from './value';
 import { Limit } from './limit';
 import { OrderBy, OrderByDirection } from './orderBy';
-import { Table, JoinTable, JoinTableType } from './table';
-import { parseConditionArray } from '../utils';
 import { Set } from './set';
+import { JoinTable, JoinTableType, Table } from './table';
+import { Value } from './value';
 
 /**
  * 可转换为SQL语句对象接口
@@ -792,7 +792,7 @@ export class UpdateBuilder extends SqlBuilder<Set> {
     where(data: object, condition?: ConditionFunction) {
         if (condition?.() !== false) {
             Object.entries(data).forEach(([key, value]) => {
-                this.whereBuilder.equal(key, value);
+                Array.isArray(value) ? this.whereBuilder.in(key, value) : this.whereBuilder.equal(key, value);
             });
         }
         return this;

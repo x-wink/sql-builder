@@ -117,6 +117,7 @@ export class Condition implements ISqlify {
     toSql(): string {
         let placeholder = '',
             error: never;
+        // TODO 处理内置函数
         if (this.value instanceof QueryBuilder) {
             // 子查询
             placeholder = concat(['(', this.value.toSql(), ')'], false);
