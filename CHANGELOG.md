@@ -1,3 +1,12 @@
+## [1.0.6](https://github.com/x-wink/sql-builder/compare/v1.0.5...v1.0.6) (2025-01-04)
+
+
+### Bug Fixes
+
+* batch update condition ([1a2be36](https://github.com/x-wink/sql-builder/commit/1a2be363f2ac7705bc075bcd6c1d2d2fac29bb35))
+
+
+
 ## [1.0.5](https://github.com/x-wink/sql-builder/compare/v1.0.4...v1.0.5) (2024-11-23)
 
 
